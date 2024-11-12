@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NON-PROFIT EDUCATIONAL DRIVE</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-cartoon-education-training-cram-school-image_9149.jpg'); /* Replace with an actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #e67e22;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .cta-button:hover {
+            background-color: #d35400;
+        }
+
+        /* Section Styles */
+        .section {
+            background-image: url('https://t4.ftcdn.net/jpg/01/16/88/37/360_F_116883786_wuckft1sNw1ouQfJ6FuquZnxea3qBlxy.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 40px;
+            margin: 20px;
+            background-color: rgb(242, 240, 243);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(8, 1, 1, 0.1);
+            color:#f5f7f9;
+        }
+
+        h3 {
+            color: #f5f7f9;
+        }
+
+        /* Event Calendar */
+        .calendar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .event {
+            width: 30%;
+            background-color: #090909;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Donation Tracker */
+        .donation-tracker {
+            background-color: #f39c12;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .donation-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #bdc3c7;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .donation-bar span {
+            display: block;
+            height: 100%;
+            background-color: #27ae60;
+            width: 50%; /* Change according to the donation progress */
+            border-radius: 5px;
+        }
+
+        /* Volunteer Sign-Up Form */
+        .volunteer-signup {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1{
+            font-weight:normal;
+            font-size:24px;
+            margin-bottom:60px;
+        }
+        label{
+            color:rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 2px;
+            padding-left: 10px;
+        }
+        
+
+        .volunteer-signup input{
+            background: rgba(254, 253, 253, 0.929);
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            padding: 0px 20px;
+            border: none;
+            margin-bottom: 20px;
+            color: #090909;
+        }
+        .volunteer-signup button {
+            background : rgb(45,126,231);
+            height: 40px;
+            line-height: 40px;
+            padding: 4px;
+            font-size: 1em;
+            border-radius: 40px;
+            border: none;
+            margin:10px 0px;
+            color: #bdc3c7;
+        }
+
+        .volunteer-signup button {
+            background-color: #2980b9;
+            color: white;
+            cursor: pointer;
+        }
+
+        .volunteer-signup button:hover {
+            background-color: #3498db;
+        }
+
+        /* Impact Stories */
+        .impact-stories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .story {
+            background-color: #080808;
+            width: 45%;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #e67e22;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>NON-PROFIT EDUCATIONAL DRIVE</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#donate">Donate</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#impact">Impact Stories</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Help Make Education Accessible for All</h2>
+        <a href="#volunteer" class="cta-button">Get Involved</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h3>About Our Cause</h3>
+        <p>We are dedicated to making education accessible to underserved communities around the world. Our current focus is raising funds for educational materials, scholarships, and outreach programs to ensure every child has the opportunity to learn and grow.</p>
+    </section>
+
+    <!-- Event Calendar Section -->
+    <section id="events" class="section">
+        <h3>Upcoming Events</h3>
+        <div class="calendar">
+            <div class="event">
+                <h4>Book Donation Drive</h4>
+                <p>Donate new or gently used books to support students in need of learning materials.</p>
+                <p><strong>Date:</strong> December 1st, 2024</p>
+            </div>
+            <div class="event">
+                <h4>Charity Fundraiser Gala</h4>
+                <p>Join us for an evening of entertainment, food, and fundraising to support education.</p>
+                <p><strong>Date:</strong> January 15th, 2025</p>
+            </div>
+            <div class="event">
+                <h4>Volunteer Teaching Program</h4>
+                <p>Become a mentor or tutor for underprivileged students in your local area.</p>
+                <p><strong>Date:</strong> February 10th, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Tracker Section -->
+    <section id="donate" class="donation-tracker section">
+        <h3>Help Us Reach Our Goal</h3>
+        <p>Your donation will provide students with the resources they need to succeed. Together, we can make a difference!</p>
+        <div class="donation-bar">
+            <span></span> <!-- Adjust width based on funds raised -->
+        </div>
+        <p><strong>$15,000 of $30,000 Raised</strong></p>
+        <a href="#" class="cta-button">Donate Now</a>
+    </section>
+
+    <!-- Volunteer Sign-Up Section -->
+    <section id="volunteer" class="section">
+        <h3>Volunteer with Us</h3>
+        <form class="volunteer-signup" action="Success.html">
+            <input type="text" id="Full Name"placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Skills or Interests" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Impact Stories Section -->
+    <section id="impact" class="section">
+        <h3>Impact Stories</h3>
+        <div class="impact-stories">
+            <div class="story">
+                <img src = "C:\Users\Hp\Desktop\Maria.jpeg" alt="Maria" height="350px"width="500px">
+                <h4><B><I>MARIYA'S STORY</I></B></h4>
+                <p><i>"In the Slum where I live,many Parents are worried about thier childrens education.Poverty and Circumstances have forced us to always live from hand to mouth many Girls could not study beyond Class 8th & I wanted to study Science and Persue Bio-tech.And I want to help Girls in my Community to complete thier Education"
+
+
+                    "I'm thankful to this 'NON-PROFITABLE EDUCATIONAL DRIVE' who helped me to continue my studies"</i>
+                </p>
+       </div>
+          <div class="story">
+                <img src = "C:\Users\Hp\Desktop\Tanisha.jpeg" alt="Tanisha" height="350px"width="500px">
+                <h4><B><I>TANISHA'S STORY</I></B></h4>
+                <p><I>"Myself Tanisha from low income family was able to persue my degree in pharmacy after recieving support from 'NON-PROFITABLE EDUCATIONAL DRIVE' I cleared all my exams in distinction"
+
+                   "A big thanks to this drive for helping me get through my tougher times and complete my further education"</I></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Nonprofit Community Hub - Education Drive. All rights reserved.</p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">Instagram</a></p>
+    </footer>
+
+</body>
+
+</html>
